@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RelativeLayout for Sales Title and Generate Report Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <!-- Sales Title aligned to the left -->
+        <TextView
+            android:id="@+id/sales_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="@color/button_pressed_gray"
+            android:shadowRadius="5"
+            android:text="SALES"
+            android:textColor="#982325"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Generate Report Button aligned to the right -->
+        <Button
+            android:id="@+id/generateReportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_textfield_confrim_btn"
+            android:fontFamily="sans-serif-black"
+            android:text="Generate Report"
+            android:textColor="#FFFB83" />
+    </RelativeLayout>
+
+    <!-- Containers Row with Titles -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3"> <!-- Adds space between the button and the containers -->
+
+        <!-- Container 1 with Title -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Daily Sale"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/daily_sales"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/container_border"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/daily_sales_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Container 2 with Title -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Monthly Sale"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/monthly_sales"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/container_border"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/monthly_sales_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Container 3 with Title -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Yearly Sale"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Container -->
+            <LinearLayout
+                android:id="@+id/yearly_sales"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/container_border"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/yearly_sales_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/salesChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg__1920x1080_"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lined_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="110dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fadingEdge="horizontal"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:text="Welcome!"
+            android:textColor="#FBCD04"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_text_bg"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="24dp"
+            android:shadowColor="#160C0C"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_text_bg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="24dp"
+            android:shadowColor="@color/black"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red" />
+
+        <TextView
+            android:id="@+id/textViewResetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_gravity="end"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Forgot Password?"
+            android:textColor="@color/golden_yellow"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rounded_btn"
+            android:fontFamily="sans-serif-light"
+            android:text="Login"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/textViewBiometricLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/lined_bg"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Login with Fingerprint"
+            android:textColor="@color/golden_yellow"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="-620dp"
+        android:background="@drawable/porky_sisig_logo__complete_"
+        android:src="@drawable/logo_nobg" />
+
+</LinearLayout>

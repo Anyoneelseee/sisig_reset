@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/border_notification"
+    android:layout_marginBottom="8dp"> <!-- Add margin at the bottom of each notification -->
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:text="Sample notification text"
+        android:textColor="#982325"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/remove_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#982325"
+        android:padding="4dp"
+        android:text="X"
+        android:textColor="#dbbe18"
+        android:textSize="12sp" />
+</LinearLayout>
+
+
+

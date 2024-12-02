@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Avatar and Change Avatar Option -->
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_background"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/change_icon_icon" />
+
+        <TextView
+            android:id="@+id/changeAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:text="Change avatar"
+            android:textColor="@android:color/black" />
+
+        <!-- Email Label and Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="1"
+            android:paddingStart="16dp"
+            android:scrollbars="vertical"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <!-- Username Label and Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_border"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="1"
+            android:paddingStart="16dp"
+            android:scrollbars="vertical"
+            tools:ignore="RtlSymmetry" />
+
+        <!-- Preferred Name Label and Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Preferred Name"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/preferredNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="1"
+            android:paddingStart="16dp"
+            android:scrollbars="vertical"
+            tools:ignore="RtlSymmetry" />
+
+        <!-- Warning Message Container -->
+
+
+        <!-- Save Changes Button -->
+        <Button
+            android:id="@+id/saveChangesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_confirm_btn"
+            android:fontFamily="sans-serif-black"
+            android:text="SAVE"
+            android:textColor="#FFFB83" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="2dp"
+                android:text="All of your data will be permanently removed. This action cannot be undone."
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Delete Account Button -->
+        <Button
+            android:id="@+id/deleteDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rounded_confirm_btn"
+            android:fontFamily="sans-serif-black"
+            android:text="Delete Data"
+            android:textColor="#FFFB83" />
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+

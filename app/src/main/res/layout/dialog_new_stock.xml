@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_marginHorizontal="40dp"
+    android:background="@drawable/rounded_background">
+
+    <!-- Rounded EditText fields with padding and spacing -->
+    <EditText
+        android:id="@+id/product_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:background="@drawable/rounded_textfield"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/items_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Items"
+        android:background="@drawable/rounded_textfield"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/category_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_textfield"
+        android:hint="Category"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp" />
+
+    <!-- Buttons side by side with padding and spacing -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/confirm_new_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_textfield_confrim_btn"
+            android:fontFamily="sans-serif-black"
+            android:paddingHorizontal="24dp"
+            android:text="Confirm"
+            android:textColor="#FFFB83" />
+
+        <Button
+            android:id="@+id/cancel_new_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/rounded_confirm_btn"
+            android:fontFamily="sans-serif-black"
+            android:paddingHorizontal="24dp"
+            android:text="Cancel"
+            android:textColor="#FFFB83" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

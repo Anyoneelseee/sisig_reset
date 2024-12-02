@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- No Notifications Layout (your no_notif layout) -->
+    <LinearLayout
+        android:id="@+id/no_notification_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <!-- Optional Icon -->
+        <ImageView
+            android:id="@+id/no_notification_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_no_notif"
+            android:contentDescription="@string/no_notification_icon_desc"
+            app:tint="@color/gray" />
+
+        <!-- No Notifications Text -->
+        <TextView
+            android:id="@+id/no_notification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Notifications"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Optional Subtext -->
+        <TextView
+            android:id="@+id/no_notification_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You're all caught up!"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Notifications List (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notifications_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/order_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="PLACE YOUR ORDER"
+        android:textColor="#982325"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Horizontal layout for Image and Menu Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <!-- Image View for Menu Item -->
+        <ImageView
+            android:id="@+id/menu_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <!-- Menu Display Layout -->
+        <LinearLayout
+            android:id="@+id/menu_display_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffefde"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/menu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Menu Item Name"
+                android:textColor="#982325"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/menu_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Description"
+                android:textColor="#982325"
+                android:textSize="16sp" />
+
+            <!-- Serving -->
+            <TextView
+                android:id="@+id/menu_serving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Serving"
+                android:textColor="#982325"
+                android:textSize="16sp" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/menu_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="Price"
+                android:textColor="#982325"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Quantity Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/decrease_quantity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:text="-"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="22sp" /> <!-- Make the background transparent -->
+
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/increase_quantity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:text="+"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+    <!-- Total Cost -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/total_cost_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost: "
+            android:textColor="#982325"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_65"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Add Order Button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_confirm_btn"
+            android:text="Confirm"
+            android:textColor="#FFFB83" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_confirm_btn"
+            android:text="Cancel"
+            android:textColor="#FFFB83" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

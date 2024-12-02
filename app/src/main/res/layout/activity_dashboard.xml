@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".DashboardActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#982325"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/mLogo"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/porky_sisig_logo__shadow___no_text_"
+            android:contentDescription="Logo"
+            android:src="@drawable/porky_sisig_logo__shadow___no_text_" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/mLogo"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:text="Porky Sisig"
+            android:textColor="@color/golden_yellow"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Menu icon"
+            android:src="@drawable/menu_icon"
+            app:menu="@menu/menu_menu" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/viewpager_header"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_confirm_btn"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Home"
+        android:textAllCaps="true"
+        android:textColor="@color/golden_yellow"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewpager_header"
+        android:layout_above="@id/bottom_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/state_list"
+        app:itemTextColor="@color/state_list"
+        app:itemIconSize="50dp"
+        app:itemRippleColor="@android:color/transparent"
+        app:menu="@menu/menu"
+        app:labelVisibilityMode="unlabeled"/>
+
+</RelativeLayout>

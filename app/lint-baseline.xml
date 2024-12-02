@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.5.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.5.1)" variant="fatal" version="8.5.1">
+
+    <issue
+        id="Instantiatable"
+        message="`HomeActivity` must extend android.app.Activity"
+        errorLine1="        &lt;activity android:name=&quot;.HomeActivity&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="33"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Instantiatable"
+        message="`InventoryActivity` must extend android.app.Activity"
+        errorLine1="        &lt;activity android:name=&quot;.InventoryActivity&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="34"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Instantiatable"
+        message="`ReportActivity` must extend android.app.Activity"
+        errorLine1="        &lt;activity android:name=&quot;.ReportActivity&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="35"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Instantiatable"
+        message="`SettingsActivity` must extend android.app.Activity"
+        errorLine1="        &lt;activity android:name=&quot;.SettingsActivity&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="36"
+            column="33"/>
+    </issue>
+
+</issues>

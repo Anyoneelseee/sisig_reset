@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sisig</string>
+    <!-- Other string resources -->
+    <string name="total_cost">₱65</string>
+    <string name="_65">₱65</string> <!-- Add this line -->
+    <string name="stock_text_format">Product Name: %1$s, Items: %2$s, Category: %3$s</string>
+    <string name="stock_text_alert_format">Product: %1$s, Alert Amount: %2$s, Items: %3$s</string>
+    <string name="no_notification_icon_desc">No notifications icon</string>
+
+</resources>
